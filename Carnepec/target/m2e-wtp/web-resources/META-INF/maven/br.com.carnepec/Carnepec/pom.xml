@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.carnepec</groupId>
+	<artifactId>Carnepec</artifactId>
+	<version>2019.10.09</version>
+	<packaging>war</packaging>
+
+	<!-- Propriedades -->
+	<properties>
+		<!-- Codificação dos Caracteres -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- Versão do Compilador Java (JDK) -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+
+		<!-- Versão do Interpretador Java (JRE) -->
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<!-- Informa que não será necessário o arquivo web.xml -->
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
+
+	<!-- Dependências -->
+	<dependencies>
+		<!-- Mojarra: JavaServer Faces da Oracle -->
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>2.2.20</version>
+		</dependency>
+
+		<!-- Primefaces: Biblioteca de componentes e temas -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>7.0</version>
+		</dependency>
+
+		<!-- Omnifaces: Biblioteca utilitária -->
+		<dependency>
+			<groupId>org.omnifaces</groupId>
+			<artifactId>omnifaces</artifactId>
+			<version>1.14.1</version>
+		</dependency>
+	</dependencies>
+</project>
